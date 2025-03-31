@@ -1,4 +1,5 @@
 File Integrity Monitoring Tool
+
 This tool monitors file integrity by checking the hashes of specified files at regular intervals to detect unauthorized modifications. It provides two main functionalities:
 
 File Manager (file.py):
