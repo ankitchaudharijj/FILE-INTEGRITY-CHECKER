@@ -1,8 +1,4 @@
 
- 
- ```markdown
- <h1 align="center">File Integrity Checker Tool</h1>
- 
  ## Description
  
  The **File Integrity Checker Tool** is a Python-based utility that helps ensure the integrity of files by continuously monitoring their hash values. It detects unauthorized or accidental modifications to files and notifies users through sequential pop-up alerts. The tool also provides an interactive interface for managing monitored files, allowing users to add, remove, or update file hashes as needed.
