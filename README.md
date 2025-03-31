@@ -64,10 +64,10 @@ Use
 
 1. Add Files to Monitor: Run file.py to add files to the monitoring database:
 
-    python file.py
+    #python file.py
 
 2. Start Monitoring: Run int.py to monitor files and receive alerts for modifications:
 
-   python int.py
+   #python int.py
 
 3. Pop-Up Alerts: If any file is modified, pop-up notifications will appear sequentially for each affected file.  
