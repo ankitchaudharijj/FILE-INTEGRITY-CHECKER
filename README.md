@@ -34,3 +34,40 @@
  ### 2. File Management (`file.py`)
  
  This script provides a command-line interface for managing monitored files.
+
+ def add_file(filepath, database):
+    if os.path.exists(filepath):
+        file_hash = calculate_file_hash(filepath)
+        current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        database[filepath] = [{"hash": file_hash, "timestamp": current_time}]
+        print(f"File {filepath} added to monitoring list.")
+    else:
+        print(f"File {filepath} does not exist.")
+
+
+      *.Add Files: Users can add files to the monitoring list.
+      *.Update Hashes: Users can manually save new hashes for monitored files.
+
+3. Notification System
+
+   def show_notification(filepath):
+    root = Tk()
+    root.withdraw()
+    messagebox.showinfo("File Integrity Alert", f"File modified: {filepath}")
+    root.destroy()
+
+
+1.GUI Alerts: Displays pop-ups for file modifications.
+2.Sequential Alerts: Ensures all modified files are notified with a 5-second gap.
+
+Use
+
+1. Add Files to Monitor: Run file.py to add files to the monitoring database:
+
+    python file.py
+
+2. Start Monitoring: Run int.py to monitor files and receive alerts for modifications:
+
+   python int.py
+
+3. Pop-Up Alerts: If any file is modified, pop-up notifications will appear sequentially for each affected file.  
