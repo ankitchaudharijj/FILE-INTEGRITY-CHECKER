@@ -1,5 +1,4 @@
-    json.dump(database, f, indent=4)
- ```
+
  
  ```markdown
  <h1 align="center">File Integrity Checker Tool</h1>
